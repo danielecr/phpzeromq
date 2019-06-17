@@ -1,6 +1,6 @@
 FROM php:7.2-cli-alpine3.9
 
-RUN apk add --no-cache openssh git procps mariadb-client \
+RUN apk add --no-cache openssh git mariadb-client \
 	libzmq zeromq-dev zeromq coreutils build-base autoconf file ssmtp libuv libuv-dev \
 	&& rm -rf /var/cache/apk/* \
 	&& pecl install uv-beta \
