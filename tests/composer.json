@@ -1,0 +1,12 @@
+{
+    "name": "danie/danie",
+    "authors": [
+        {
+            "name": "d",
+            "email": "dc@xwave.de"
+        }
+    ],
+    "require": {
+        "react/zmq": "^0.4.0"
+    }
+}
