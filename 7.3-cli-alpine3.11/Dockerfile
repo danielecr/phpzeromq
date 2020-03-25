@@ -11,7 +11,6 @@ RUN apk add --no-cache openssh git gnu-libiconv mysql-dev mariadb-client \
 	&& curl -fsSL https://getcomposer.org/installer | php \
 	&& mv composer.phar /usr/local/bin/composer \
 	&& apk del autoconf gcc libzmq zeromq-dev coreutils build-base libuv-dev mysql-dev \
-	mariadb-dev zlib-dev libc-dev musl-dev pkgconf m4 perl g++ make libressl-dev zeromq-dev
-
-RUN addgroup -g 1000 -S scroll \
+	mariadb-dev zlib-dev libc-dev musl-dev pkgconf m4 perl g++ make libressl-dev zeromq-dev \
+	&& addgroup -g 1000 -S scroll \
 	&& adduser -u 1000 -D -S -G scroll scroll
