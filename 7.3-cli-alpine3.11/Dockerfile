@@ -1,7 +1,7 @@
-FROM php:7.2-cli-alpine3.10
+FROM php:7.3-cli-alpine3.11
 
 RUN apk add --no-cache openssh git gnu-libiconv mysql-dev mariadb-client \
-	autoconf gcc libzmq zeromq-dev zeromq coreutils build-base file ssmtp libuv libuv-dev \
+	autoconf gcc libzmq zeromq-dev zeromq coreutils build-base file ssmtp libxml2-dev libuv libuv-dev \
 	&& rm -rf /var/cache/apk/* \
 	&& pecl install uv-beta \
 	&& pecl install zmq-beta \
