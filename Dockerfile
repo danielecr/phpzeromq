@@ -5,7 +5,7 @@ RUN apk add --no-cache openssh git gnu-libiconv mysql-dev mariadb-client \
 	&& rm -rf /var/cache/apk/* \
 	&& pecl install uv-beta \
 	&& pecl install zmq-beta \
-	&& docker-php-ext-install mysqli pdo_mysql pcntl \
+	&& docker-php-ext-install mysqli pdo_mysql pcntl zip soap \
  	&& docker-php-ext-enable zmq uv \
 	&& rm -rf /tmp/pear \
 	&& curl -fsSL https://getcomposer.org/installer | php \
