@@ -1,5 +1,5 @@
 ARG ARCH=
-FROM ${ARCH}php:7.3-cli-alpine3.11
+FROM ${ARCH}php:7.4-cli-alpine3.15
 
 RUN apk add --no-cache openssh git gnu-libiconv mysql-dev mariadb-client \
 	autoconf gcc libzmq zeromq-dev zeromq coreutils build-base file ssmtp libxml2-dev libuv libuv-dev \
