@@ -1,6 +1,6 @@
 #! /bin/sh
 IMAGETAG=danielecr/phpzeromq:7.4-cli-alpine3.15
-ARCHS="amd64 arm32v7"
+ARCHS="amd64 arm64"
 
 TAGMANIFEST=danielecr/phpzeromq:7.4-cli-alpine3.15
 
