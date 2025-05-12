@@ -1,8 +1,8 @@
 #! /bin/sh
-IMAGETAG=starsellersworld/reactphpzeromq:7.4-cli-alpine3.15
+IMAGETAG=danielecr/phpzeromq:7.4-cli-alpine3.15
 ARCHS="amd64 arm32v7"
 
-TAGMANIFEST=starsellersworld/reactphpzeromq:7.4-cli-alpine3.15
+TAGMANIFEST=danielecr/phpzeromq:7.4-cli-alpine3.15
 
 INMANIFEST=
 
